@@ -4,12 +4,14 @@ import ProjectCard from "@/component/ProjectCard"
 import { project } from "@/data/projects"
 import Image from "next/image"
 import Link from "next/link"
+import ScrollIndicator from "@/component/ScrollIndicator"
 
 
 export default function Home() {
   return (
 
       <main className='container px-5 flex flex-col  mx-auto pt-16  xl:flex-row'>
+        <ScrollIndicator />
         
         <div className='mx-auto w-auto mb-20 xl:w-1/2 xl:mr-8'>
           <div className='text-center top-16 xl:mr-8 xl:sticky xl:text-left xl:ml-0'>
@@ -34,6 +36,7 @@ export default function Home() {
               </div>
             </div>
           
+          <Link href='/projects/kingsoftdesignsystem'> test</Link>
 
           {/* <div className='justify-center xl:justify-start mt-5 flex-row flex gap-4'>
           <Link className='text-gray-500 dark:text-white' href="https://dribbble.com/mumumycat">
@@ -55,7 +58,7 @@ export default function Home() {
 
       <div className='flex flex-col gap-12'>
       {project.map((project,index) => ( 
-        <ProjectCard key={index} projectName={project.name} coverImage={project.image} />
+        <ProjectCard key={index} projectName={project.project} coverImage={project.image} />
       ))}
 
       </div>

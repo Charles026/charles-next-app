@@ -5,15 +5,14 @@ import styles from '@/component/Footer.module.css';
 
 const Footer = () => {
     return (
-        <footer className={`${styles.footerWrapper}  w-full mt-16 flex flex-row items-center`}>
+        <footer className={`${styles.footerWrapper} flex flex-row items-center justify-center`}>
 
-            <div className=" container flex flex-row
-        px-5 mx-auto border-t h-32 ">
+            <div className="container flex flex-row">
 
-            <Image src={CatHead} sizes="36" alt="Ahdai">
+            <Image src={CatHead} alt="Ahdai">
             </Image>
 
-            <div className="flex flex-col">
+            <div className={styles.contentWrapper}>
             <p>
                 Built with ❤️ for Ahdai
             </p>
