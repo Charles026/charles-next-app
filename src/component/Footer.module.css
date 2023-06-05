@@ -1,0 +1,4 @@
+.footerWrapper {
+    height: 120px;
+    border-top:1px solid var(--color-border-primary);
+}
