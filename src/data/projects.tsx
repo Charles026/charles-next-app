@@ -17,5 +17,34 @@ export const project = [
     description: "This is the first project",
     image: imgPlaceholder,
   },
+  {
+    name: "kingsoft-design-system",
+    description: "This is the first project",
+    image: imgPlaceholder,
+  },
+  {
+    name: "kingsoft-design-system",
+    description: "This is the first project",
+    image: imgPlaceholder,
+  },
+  {
+    name: "kingsoft-design-system",
+    description: "This is the first project",
+    image: imgPlaceholder,
+  },  {
+    name: "kingsoft-design-system",
+    description: "This is the first project",
+    image: imgPlaceholder,
+  },
+  {
+    name: "kingsoft-design-system",
+    description: "This is the first project",
+    image: imgPlaceholder,
+  },
+  {
+    name: "kingsoft-design-system",
+    description: "This is the first project",
+    image: imgPlaceholder,
+  },
 ];
 

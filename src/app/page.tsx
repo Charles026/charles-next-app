@@ -4,12 +4,12 @@ import ProjectCard from "@/component/ProjectCard"
 import { project } from "@/data/projects"
 import Image from "next/image"
 import Link from "next/link"
-import clx from "classnames"
+
 
 export default function Home() {
   return (
 
-      <main className='container px-5 flex flex-col  mx-auto pt-16  xl:flex-row '>
+      <main className='container px-5 flex flex-col  mx-auto pt-16  xl:flex-row'>
         
         <div className='mx-auto w-auto mb-20 xl:w-1/2 xl:mr-8'>
           <div className='text-center top-16 xl:mr-8 xl:sticky xl:text-left xl:ml-0'>
@@ -54,8 +54,8 @@ export default function Home() {
 
 
       <div className='flex flex-col gap-12'>
-      {project.map((project) => ( 
-        <ProjectCard projectName={project.name} coverImage={project.image} />
+      {project.map((project,index) => ( 
+        <ProjectCard key={index} projectName={project.name} coverImage={project.image} />
       ))}
 
       </div>
